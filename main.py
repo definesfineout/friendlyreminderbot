@@ -2,7 +2,7 @@
 import random
 import tweepy
 
-with open('reminders.txt') as f: lines = f.readlines()
+with open('reminders.txt', encoding="utf8") as f: lines = f.readlines()
 
 # Select a random line from the reminders file.
 line = lines[random.randint(0, len(lines) - 1)]
